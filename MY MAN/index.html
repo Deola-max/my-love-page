@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>For My Love</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>For You My Love ❤️</h1>
+    <div class="message">
+        My obim, <br>
+        Even though miles separate us, my heart beats only for you. <br> Every message from you is like a spark that sets my soul on fire,<br> and every call feels like you're right here, whispering sweet words into my ear. <br> I can't see you yet, but I feel you in every moment—in the way my heart races when I think of you, <br> in the way I smile when I read your words, <br> in the way my body aches for the day I'll finally be in your arms. <br>
+
+        I imagine what it will be like when we finally meet. <br> How my hands will trace the lines of your face, <br> how my lips will finally taste yours, <br> how every stolen glance will be filled with unspoken desire. <br> Until then, I’ll keep loving you from a distance, <br> dreaming of the day I no longer have to.
+        
+        You are worth every second of waiting, <br> every longing sigh, and every sleepless night spent missing you. 
+        <br>
+        If only you knew the things I want to do to you when we're finally together... <br> but for now, I'll let your imagination drive you crazy." 😘
+        You are the most amazing person in my life. <br> Every day with you is a blessing, and I am so grateful for your love
+        <p>You are worth every second of waiting...</p>
+        <p><strong>Always yours,</strong><br> Your Love Adeola❤️</p>
+        
+    </div>
+    <script>
+        function createSparkles() {
+            for (let i = 0; i < 15; i++) {
+                let sparkle = document.createElement("div");
+                sparkle.classList.add("sparkle");
+                document.body.appendChild(sparkle);
+    
+                sparkle.style.left = Math.random() * 100 + "vw";
+                sparkle.style.top = Math.random() * 100 + "vh";
+                sparkle.style.animationDuration = (Math.random() * 2 + 1) + "s";
+    
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 3000);
+            }
+        }
+    
+        setInterval(createSparkles, 1500);
+    </script>
+    
+    <div class="heart">❤️</div>
+
+    <div class="heart-animation">❤️</div>
+    <div class="heart-animation">💖</div>
+    <div class="heart-animation">💕</div>
+    <div class="heart-animation">💘</div>
+    <div class="heart-animation">💓</div>
+
+    <button onclick="playSong()">Play Song 🎶</button>
+    <audio id="loveSong" src="song.mp3"></audio>
+
+    <script>
+        function playSong() {
+            let song = document.getElementById("loveSong");
+            if (song.paused) {
+                song.play();
+            } else {
+                song.pause();
+            }
+        }
+    </script>
+</body>
+</html>
